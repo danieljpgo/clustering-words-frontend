@@ -2,5 +2,5 @@ export const environment = {
   production: true,
 
   // URL of development API
-  apiUrl: 'https://wordsvector.herokuapp.com'
+  apiUrl: 'http://0.0.0.0:51219'
 };
