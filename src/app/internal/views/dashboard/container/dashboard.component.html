@@ -1,1 +1,62 @@
-<p>dashboard works!</p>
+<div class="container">
+
+  <div class="box"
+       [class.mat-elevation-z2]="true">
+    <form [formGroup]="vocabularyForm"
+          name="templateForm"
+          novalidate
+          autocomplete="off"
+          (ngSubmit)="handleSubmit()">
+
+      <div>
+        <mat-form-field appearance="outline"
+                        floatLabel="auto">
+        <textarea matInput
+                  formControlName="text"
+                  placeholder="Digite seu texto"></textarea>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-radio-group formControlName="options"
+                         color="primary">
+          <mat-radio-button [value]="0">
+            O vocabulário - palavras isoladas.
+          </mat-radio-button>
+          <mat-radio-button [value]="1">
+            O vocabulário - 2 palavras em sequência.
+          </mat-radio-button>
+          <mat-radio-button [value]="2">
+            Vetores de palavras - vocabulário palavras isoladas.
+          </mat-radio-button>
+          <mat-radio-button [value]="3">
+            Vetores de palavras - vocabulário formado por
+            grupos de 2 palavras em sequência.
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <div>
+        <button type="submit"
+                mat-raised-button
+                color="primary">
+          Criar texto
+        </button>
+      </div>
+
+      <div>
+        {{ response }}
+      </div>
+    </form>
+  </div>
+
+  <div class="box"
+       [class.mat-elevation-z2]="true">
+    Logs
+  </div>
+
+  <div class="box"
+       [class.mat-elevation-z2]="true">
+    Tabela
+  </div>
+</div>
