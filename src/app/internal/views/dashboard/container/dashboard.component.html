@@ -2,11 +2,12 @@
 
   <div class="box"
        [class.mat-elevation-z2]="true">
+    <div class="title">Cadastre um texto:</div>
     <form [formGroup]="vocabularyForm"
           name="templateForm"
           novalidate
           autocomplete="off"
-          (ngSubmit)="handleSubmit()">
+          (ngSubmit)="handleSubmitText()">
 
       <div>
         <mat-form-field appearance="outline"
@@ -16,6 +17,44 @@
                   placeholder="Digite seu texto"></textarea>
         </mat-form-field>
       </div>
+
+      <div>
+        <button type="submit"
+                mat-raised-button
+                color="primary">
+          Adicionar
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="box"
+       [class.mat-elevation-z2]="true">
+    Logs
+  </div>
+
+  <div class="box"
+       [class.mat-elevation-z2]="true">
+    <div class="title">Selecione um texto:</div>
+    <div class="list-texts"
+         [@animateStagger]="{value:'200'}">
+      <div *ngFor="let vocabulary of vocabularies?.rows; let i = index"
+           [@animate]="{value:'*',params:{y:'100%'}}"
+           [ngClass]="{'select': selectId === vocabulary?.id}"
+           (click)="handleSelect(vocabulary)">
+        {{ vocabulary?.text }}
+      </div>
+    </div>
+  </div>
+
+  <div class="box"
+       [class.mat-elevation-z2]="true">
+    <div class="title">Selecione uma opção:</div>
+    <form [formGroup]="vocabularyGenForm"
+          name="templateForm"
+          novalidate
+          autocomplete="off"
+          (ngSubmit)="handleSelectGen(selectId)">
 
       <div>
         <mat-radio-group formControlName="options"
@@ -40,23 +79,19 @@
         <button type="submit"
                 mat-raised-button
                 color="primary">
-          Criar texto
+          Resultado
         </button>
-      </div>
-
-      <div>
-        {{ response }}
       </div>
     </form>
   </div>
 
   <div class="box"
        [class.mat-elevation-z2]="true">
-    Logs
-  </div>
-
-  <div class="box"
-       [class.mat-elevation-z2]="true">
-    Tabela
+    <div class="title">Resposta:</div>
+    <div class="response">
+      <code>
+        {{ respost }}
+      </code>
+    </div>
   </div>
 </div>
