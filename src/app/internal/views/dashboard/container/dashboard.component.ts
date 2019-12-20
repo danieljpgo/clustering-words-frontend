@@ -23,9 +23,9 @@ export class DashboardComponent implements OnInit {
   vocabularyForm: FormGroup;
   vocabularyGenForm: FormGroup;
 
-  vocabularies = [];
-  selectId;
-  respost;
+  vocabularies: any;
+  selectId: string;
+  respost: any;
 
   constructor(private formBuilder: FormBuilder, private dashboardService: DashboardService) {
     this.vocabularyForm = this.formBuilder.group({
@@ -62,22 +62,22 @@ export class DashboardComponent implements OnInit {
   handleSelectGen(id: string): void {
     switch (this.vocabularyGenForm.get('options').value) {
       case 0: this.dashboardService.getVocabIsolated(id)
-        .subscribe((value) => {
+        .subscribe((value: any) => {
           this.respost = value;
         });
               break;
       case 1: this.dashboardService.getVocabGroup(id)
-        .subscribe((value) => {
+        .subscribe((value: any) => {
           this.respost = value;
         });
               break;
       case 2: this.dashboardService.getVocabIsolatedVector(id)
-        .subscribe((value) => {
+        .subscribe((value: any) => {
           this.respost = value;
         });
               break;
       case 3: this.dashboardService.getVocabGroupVector(id)
-        .subscribe((value) => {
+        .subscribe((value: any) => {
           this.respost = value;
         });
               break;
@@ -86,7 +86,7 @@ export class DashboardComponent implements OnInit {
 
   handleListVocab(): void {
     this.dashboardService.listVocabularies(this.requestParams)
-      .subscribe((vocabularies: any[]) => {
+      .subscribe((vocabularies: any) => {
         this.vocabularies = vocabularies;
       });
   }
