@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./views/views.module').then(mod => mod.ViewsModule)
+    loadChildren: () => import('./internal/views/views.module').then(mod => mod.ViewsModule)
   },
   // Handle not found routes
   {
