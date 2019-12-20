@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
     sort: '',
     order: '',
     page: 1,
-    limit: 30
+    limit: 100
   };
 
   // Form
