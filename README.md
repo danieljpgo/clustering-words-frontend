@@ -1,27 +1,83 @@
-# FrontendWordsVector
+ 
+<h1> Clustering Words Frontend </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+<p align="left">
+   <a href="https://github.com/danieljpgo">
+      <img
+         alt="author"
+         src="https://img.shields.io/badge/author-danieljpgo-252525?style=flat-square"
+      />
+   </a>
+   <img
+      alt="languages"
+      src="https://img.shields.io/github/languages/count/danieljpgo/clustering-words-frontend?color=252525&style=flat-square"
+   />
+   <a href="https://github.com/danieljpgo/clustering-words-frontend/graphs/contributors">
+      <img
+         alt="contributors"
+         src="https://img.shields.io/github/contributors/danieljpgo/clustering-words-frontend?color=252525&style=flat-square"/>
+   </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-252525?style=flat-square">
+</p>
 
-## Development server
+> Solves problems related to **Natural Language Processing**. :card_file_box:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+----
 
-## Code scaffolding
+<p align="center">
+   <a href="#memo-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#computer-integrations">Integrations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#man_technologist-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#runner-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#page_with_curl-license">License</a>
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h1 align="center">
+   <img
+      alt="notebook"
+      title="notebook"
+      src=".github/test.gif"
+      width="600px" />
+</h1>
 
-## Build
+## :memo: Project
+The project was developed as a challenge to create the **API Rest** that solves the following problems related to **Natural Language Processing**:
+- The complete vocabulary formed by the isolated words.
+- The complete vocabulary formed by groups of 2 words in sequence **(2-gram)**.
+- The numbers **(n)** of word vectors in all documents, considering the vocabulary formed by isolated words.
+- The number **(n)** word vectors of all documents, considering the vocabulary formed by groups of 2 words in sequence **(2-gram)**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The interface is just a more practical way of entering data and displaying results.
 
-## Running unit tests
+## :computer: Integrations
+This project is part of the **Clustering Words** system, the other projects are located at:
+- [Frontend Clustering Words](https://github.com/danieljpgo/clustering-words-backend)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :man_technologist: Technologies
+The main technologies used to develop the project were:
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [Typescript](https://www.typescriptlang.org/)
 
-## Running end-to-end tests
+## :runner: Getting Started
+First, make sure you have **[Node](https://nodejs.org/en/)**, then clone the project with:
+```
+git clone https://github.com/danieljpgo/clustering-words-frontend.git
+```
+With **[npm](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/)**, install dependencies:
+```
+npm install
+```
+In order to **start** the application in a development environment, execute:
+```
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Any questions or problems access the links to the main technologies mentioned in <a href="#technologies">Technologies</a>.
 
-## Further help
+## :page_with_curl: License
+This project is under the [MIT license](https://github.com/danieljpgo/clustering-words-frontend/blob/master/LICENSE).
+<div>Released in 2019.</div>
+<div>README update in 2020.</div>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Developed by [Daniel Jorge](https://github.com/danieljpgo)
