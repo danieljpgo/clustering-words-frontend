@@ -20,7 +20,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-252525?style=flat-square">
 </p>
 
-> Solves problems related to **Natural Language Processing**. :card_file_box:
+> Solving problems related to **Natural Language Processing**. :card_file_box:
 
 ----
 
@@ -41,7 +41,7 @@
 </h1>
 
 ## :memo: Project
-The project was developed as a challenge to create the **API Rest** that solves the following problems related to **Natural Language Processing**:
+The project was developed as a challenge to create a **API Rest** that solves the following problems related to **Natural Language Processing**:
 - The complete vocabulary formed by the isolated words.
 - The complete vocabulary formed by groups of 2 words in sequence **(2-gram)**.
 - The numbers **(n)** of word vectors in all documents, considering the vocabulary formed by isolated words.
